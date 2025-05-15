@@ -1,0 +1,44 @@
+server:
+    host: 127.0.0.1
+    port: __PORT__
+    # When set to true, allows cookies to be sent over non-HTTPS connections.
+    # WARNING: Only enable this in trusted environments like a homelab
+    # where HTTPS is not available. This reduces security by allowing
+    # cookies to be transmitted in plain text.
+    allow_insecure_cookies: true
+    # Enable native TLS. When true, application will run over HTTPS using the
+    # supplied certificate and key paths.
+    ssl: false
+    ssl_cert:
+    ssl_key:
+wiki:
+    root_dir: data
+    documents_dir: documents
+    title: "📚 Wiki-Go"
+    owner: wiki.example.com
+    notice: Copyright 2025 © All rights reserved.
+    timezone: __TIMEZONE__
+    private: false
+    disable_comments: false
+    max_versions: 10
+    # Maximum file upload size in MB
+    max_upload_size: 10
+    # Default language for the wiki interface (en, es, etc.)
+    language: __LANGUAGE__
+security:
+    login_ban:
+        # Enable protection against brute force login attacks
+        enabled: true
+        # Number of failed attempts before triggering a ban
+        max_failures: 3
+        # Time window in seconds for counting failures
+        window_seconds: 30
+        # Duration in seconds for the first ban
+        initial_ban_seconds: 60
+        # Maximum ban duration in seconds (24 hours)
+        max_ban_seconds: 86400
+users:
+    - username: __ADMIN__
+      password: __PASSWORD__
+      is_admin: true
+      
