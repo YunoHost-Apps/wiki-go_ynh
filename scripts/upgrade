@@ -24,11 +24,11 @@ ynh_setup_source --dest_dir="$install_dir" --full_replace --keep="data"
 #=================================================
 # UPDATE A CONFIG FILE
 #=================================================
-ynh_script_progression "Updating $app's configuration files..."
+#ynh_script_progression "Updating $app's configuration files..."
 
-ynh_config_add --template="config.yaml" --destination="$install_dir/data/config.yaml"
+#ynh_config_add --template="config.yaml" --destination="$install_dir/data/config.yaml"
 
-chown -R $app:$app $install_dir
+#chown -R $app:$app $install_dir
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
