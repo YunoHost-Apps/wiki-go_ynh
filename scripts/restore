@@ -16,13 +16,6 @@ ynh_script_progression "Restoring the app main directory..."
 ynh_restore "$install_dir"
 
 #=================================================
-# RESTORE THE DATA DIRECTORY
-#=================================================
-ynh_script_progression "Restoring the data directory..."
-
-ynh_restore "$data_dir"
-
-#=================================================
 # RESTORE SYSTEM CONFIGURATIONS
 #=================================================
 ynh_script_progression "Restoring system configurations related to $app..."
@@ -32,7 +25,7 @@ ynh_restore "/etc/nginx/conf.d/$domain.d/$app.conf"
 ynh_restore "/etc/systemd/system/$app.service"
 systemctl enable "$app.service" --quiet
 
-yunohost service add "$app" --description="A short description of the app" --log="/var/log/$app/$app.log"
+yunohost service add "$app" --description="Databaseless flat-file wiki" --log="/var/log/$app/$app.log"
 
 #=================================================
 # RELOAD NGINX AND PHP-FPM OR THE APP SERVICE
