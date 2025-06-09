@@ -7,7 +7,7 @@ name = "Wiki-Go"
 description.en = "Databaseless flat-file wiki platform"
 description.fr = "Plate-forme wiki moderne sans base de données"
 
-version = "1.4.5~ynh1"
+version = "1.5.6~ynh1"
 
 maintainers = ["eric_G"]
 
