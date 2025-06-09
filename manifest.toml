@@ -61,8 +61,8 @@ ram.runtime = "50M"
     in_subdir = false
     extract = false
     rename = "wiki-go"
-    url = "https://github.com/leomoon-studios/wiki-go/releases/download/v1.4.5/wiki-go-linux-amd64"
-    sha256 = "c45c6176b50c367b95eaa18237d345b3a8208a849bcfe23407bc56533cc8b6ec"
+    url = "https://github.com/leomoon-studios/wiki-go/releases/download/v1.5.6/wiki-go-linux-amd64"
+    sha256 = "e6a49b1fd09224c6b0385c4497856c0e113f3cec03c51ad64461352e1d388998"
 
     # autoupdate.strategy = "latest_github_tag"
 
