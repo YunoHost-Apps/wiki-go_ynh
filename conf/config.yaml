@@ -40,6 +40,5 @@ security:
 users:
     - username: __ADMIN__
       #password: demo123
-      password: $2a$10$eJtF6/g7dpPtWv6QP9jmVuybt4uTFlb.r5Q2paCqmWHcl.W5DfSba 
-      #is_admin: true #format from the DOC
-      role: admin #format from the DEMO site
+      password: $2a$10$eJtF6/g7dpPtWv6QP9jmVuybt4uTFlb.r5Q2paCqmWHcl.W5DfSba
+      role: admin
