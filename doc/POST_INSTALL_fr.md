@@ -1,0 +1,1 @@
+Vous pouvez désormais vous connecter à la page de configuration de Wiki-Go, en utilisant le **nom d’utilisateur⋅trice** sélectionné durant l’installation (attention : nom tout en minuscules). Le **mot de passe par défaut** est `demo123`, il est vivement conseillé de le _changer immédiatement_ pour des raisons évidentes de sécurité.
