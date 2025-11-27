@@ -67,7 +67,7 @@ ram.runtime = "50M"
     armhf.url = "https://github.com/leomoon-studios/wiki-go/releases/download/v1.7.6/wiki-go-linux-armv7"
     armhf.sha256 = "635ecde13bf4db29dafafeacf36c21c2d58cc122f94fea136d4b8049b4f55aec"
 
-    # autoupdate.strategy = "latest_github_tag"
+    autoupdate.strategy = "latest_github_release"
 
     [resources.system_user]
 
