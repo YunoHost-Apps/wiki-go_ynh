@@ -47,10 +47,8 @@ ram.runtime = "50M"
     [install.admin]
     type = "user"
 
-    #[install.password]
-    #help.en = "Use the help field to add an information for the admin about this question."
-    #help.fr = "Utilisez le champ aide pour ajouter une information à l'intention de l'administrateur à propos de cette question."
-    #type = "password"
+    [install.password]
+    type = "password"
 
 [resources]
 
@@ -67,11 +65,13 @@ ram.runtime = "50M"
     armhf.url = "https://github.com/leomoon-studios/wiki-go/releases/download/v1.7.6/wiki-go-linux-armv7"
     armhf.sha256 = "635ecde13bf4db29dafafeacf36c21c2d58cc122f94fea136d4b8049b4f55aec"
 
-    # autoupdate.strategy = "latest_github_tag"
+    autoupdate.strategy = "latest_github_releases"
 
     [resources.system_user]
 
     [resources.install_dir]
+
+    [resources.data_dir]
 
     [resources.permissions]
     main.url = "/"

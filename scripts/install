@@ -11,6 +11,7 @@ source /usr/share/yunohost/helpers
 #=================================================
 
 timezone=$(cat /etc/timezone)
+bcrypt_pwd=$(htpasswd -bnBC 10 "" $password | grep -oP '\$2[ayb]\$.{56}')
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -29,9 +30,7 @@ ynh_script_progression "Adding $app's configuration files..."
 
 mkdir $install_dir/data
 
-ynh_config_add --template="config.yaml" --destination="$install_dir/data/config.yaml"
-
-chown -R $app:$app $install_dir
+ynh_config_add --template="config.yaml" --destination="$data_dir/config.yaml"
 
 #=================================================
 # SYSTEM CONFIGURATION

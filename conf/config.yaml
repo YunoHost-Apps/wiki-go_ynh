@@ -12,7 +12,7 @@ server:
     ssl_cert:
     ssl_key:
 wiki:
-    root_dir: data
+    root_dir: __DATA_DIR__
     documents_dir: documents
     title: "📚 Wiki-Go"
     owner: wiki.example.com
@@ -40,5 +40,5 @@ security:
 users:
     - username: __ADMIN__
       # Default password: admin
-      password: $2y$10$L7GA6VqSHa/7i.2pmkGXueh0CXJXXbt3T0lUuv4A7iPbRYOmdAEb6
+      password: __BCRYPT_PWD__
       role: admin
