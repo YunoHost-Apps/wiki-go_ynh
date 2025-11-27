@@ -39,6 +39,6 @@ security:
         max_ban_seconds: 86400
 users:
     - username: __ADMIN__
-      password: __PASSWORD__
-      is_admin: true
-      
+      # Default password: admin
+      password: $2y$10$L7GA6VqSHa/7i.2pmkGXueh0CXJXXbt3T0lUuv4A7iPbRYOmdAEb6
+      role: admin
