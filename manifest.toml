@@ -47,6 +47,9 @@ ram.runtime = "50M"
     [install.admin]
     type = "user"
 
+    [install.password]
+    type = "password"
+
 [resources]
 
     [resources.sources]
@@ -68,7 +71,12 @@ ram.runtime = "50M"
 
     [resources.install_dir]
 
+    [resources.data_dir]
+
     [resources.permissions]
     main.url = "/"
 
     [resources.ports]
+
+    [resources.apt]
+    packages = "apache2-utils"
