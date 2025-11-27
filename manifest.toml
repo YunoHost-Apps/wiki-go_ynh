@@ -79,4 +79,4 @@ ram.runtime = "50M"
     [resources.ports]
 
     [resources.apt]
-    packages = "httpd-tools"
+    packages = "apache2-utils"
