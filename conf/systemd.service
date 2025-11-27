@@ -1,5 +1,5 @@
 [Unit]
-Description=Wiki-Go
+Description=Wiki-Go: Databaseless flat-file wiki
 After=network.target
 
 [Service]
