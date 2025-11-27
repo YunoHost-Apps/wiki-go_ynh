@@ -28,9 +28,9 @@ chmod +x "$install_dir/wiki-go"
 #=================================================
 ynh_script_progression "Adding $app's configuration files..."
 
-mkdir $install_dir/data
-
 ynh_config_add --template="config.yaml" --destination="$data_dir/config.yaml"
+chmod 750 "$data_dir/config.yaml"
+chown "$app:$app" "$data_dir/config.yaml"
 
 #=================================================
 # SYSTEM CONFIGURATION
