@@ -19,7 +19,7 @@ code = "https://github.com/leomoon-studios/wiki-go"
 [integration]
 yunohost = ">= 12.1.17"
 helpers_version = "2.1"
-architectures = "all"
+architectures = ["amd64", "arm64", "armhf"]
 multi_instance = true
 
 ldap = false
@@ -63,6 +63,9 @@ ram.runtime = "50M"
     armhf.sha256 = "635ecde13bf4db29dafafeacf36c21c2d58cc122f94fea136d4b8049b4f55aec"
 
     autoupdate.strategy = "latest_github_release"
+    autoupdate.asset.amd64 = "wiki-go-linux-amd64"
+    autoupdate.asset.arm64 = "wiki-go-linux-arm64"
+    autoupdate.asset.armhf = "wiki-go-linux-armv7"
 
     [resources.system_user]
 
