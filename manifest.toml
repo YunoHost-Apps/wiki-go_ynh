@@ -7,7 +7,7 @@ name = "Wiki-Go"
 description.en = "Databaseless flat-file wiki platform"
 description.fr = "Plate-forme wiki moderne sans base de données"
 
-version = "1.8.11~ynh1"
+version = "1.8.12~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -55,12 +55,12 @@ ram.runtime = "50M"
     in_subdir = false
     extract = false
     rename = "wiki-go"
-    amd64.url = "https://github.com/leomoon-studios/wiki-go/releases/download/v1.8.11/wiki-go-linux-amd64"
-    amd64.sha256 = "45d5cf9aa230ba0780dce1d74eb557dfebc4b9faa119f5ac726322701cdf5b05"
-    arm64.url = "https://github.com/leomoon-studios/wiki-go/releases/download/v1.8.11/wiki-go-linux-arm64"
-    arm64.sha256 = "5b08d7eb33ad1ac7c136f47abc70e1d1a854107414d162432e327836728e1578"
-    armhf.url = "https://github.com/leomoon-studios/wiki-go/releases/download/v1.8.11/wiki-go-linux-armv7"
-    armhf.sha256 = "05b3d2170d729854524572a0669170e2ef989a42cf9cfd42850c6cd5f555becc"
+    amd64.url = "https://github.com/leomoon-studios/wiki-go/releases/download/v1.8.12/wiki-go-linux-amd64"
+    amd64.sha256 = "a9ad41b2b69d90d696ff264ff2e0802b8afaa754a5e66e013aacbb68b789ac44"
+    arm64.url = "https://github.com/leomoon-studios/wiki-go/releases/download/v1.8.12/wiki-go-linux-arm64"
+    arm64.sha256 = "8fc4bcf837cb0ac663278dac810dbbd25fb969af2c9245d50368ab2a3d42a28e"
+    armhf.url = "https://github.com/leomoon-studios/wiki-go/releases/download/v1.8.12/wiki-go-linux-armv7"
+    armhf.sha256 = "c623523c4c019bf674a5251eef06a712d32298eaa54de044fed3dae992b9e412"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset.amd64 = "wiki-go-linux-amd64"
